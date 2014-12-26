@@ -1,0 +1,160 @@
+
+@media screen and (orientation:portrait) {
+	
+	body
+	{
+		/*display:none; */
+	}
+}
+
+.loaderScreen
+{
+	position: absolute;
+	background-color:black;
+	left: 50%;
+	top: 50%;
+	margin-left:-512px;
+	margin-top: -384px;
+}
+
+
+.guiViewJSObject
+{
+	position: absolute;
+	width:1024px;
+	height:768px;
+	left: 50%;
+	top: 50%;
+	margin-left:-512px;
+	margin-top:-384px;
+	z-index:2;
+	font-family: gameFont;
+     font-size:25px;
+     text-align: center;
+      font-weight: bold;
+}
+
+
+
+
+
+@font-face
+{
+font-family: gameFont;
+src: url('Fonts/CloisterBlack.ttf');
+}
+
+.LogPanel
+{
+	position:absolute;
+	left:0px;
+	top:100px;
+	color:white;
+	z-index:5;
+	 font-size:10px;
+     text-align: left;
+      font-weight: bold;
+}
+
+.Background
+{
+	position: absolute;
+	width:100%;
+	height:768px;
+	z-index:-3;
+	background-color:red;
+}
+.Ground
+{
+	position:absolute;
+	width:1024px;
+	height:170px;
+	left: 50%;
+	top: 50%;
+	margin-top:214px;
+	margin-left:-512px;
+	z-index:-2;
+}
+
+.House
+{
+	position: absolute;
+	width:1024px;
+	height:768px;
+	left: 50%;
+	top: 50%;
+	margin-left:-512px;
+	margin-top:-384px;
+	z-index:-1;
+}
+
+.WheelIconFrames
+{
+	position: absolute;
+	width:755px;
+	height:467px;
+	left: 50%;
+	top: 50%;
+	margin-left:-360px;/*-377px;*/
+	margin-top:-262px; /*-233px;*/
+	
+	overflow:hidden;
+	
+}
+
+
+
+.bodyRoot {
+   
+   overflow-y: hidden;
+   overflow-x: hidden; 
+   background-color:black;
+  
+}
+
+.WheelsDisplayer
+{
+	
+	position: absolute;
+	width:800px;
+	height:472px;/*467px;*/
+	left: 50%;
+	top: 50%;
+	margin-left:-397px;/*-377px;*/
+	margin-top: -260px;/*-262px; -233px;*/
+    overflow:hidden; 
+    
+  
+  -webkit-transition: all 0.5s ease-out; 
+     -moz-transition: all 0.5s ease-out; 
+      -ms-transition: all 0.5s ease-out; 
+       -o-transition: all 0.5s ease-out; 
+          transition: all 0.5s ease-out;
+  -webkit-filter: blur(0px);
+}
+
+.WheelsDisplayerWithFilter
+{
+	-webkit-filter: blur(2px);
+	-moz-filter: blur(2px);
+	-o-filter: blur(2px);
+	-ms-filter: blur(2px);
+}
+
+.AnimationDisplayer
+{
+	
+	position: absolute;
+	width:1024px;
+	height:768px;
+	left: 50%;
+	top: 50%;
+	margin-left:-512px;
+	margin-top:-384px;
+  
+}
+
+
+
+
+      

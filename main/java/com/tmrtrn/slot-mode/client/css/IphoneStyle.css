@@ -1,0 +1,143 @@
+
+body
+{
+	padding:0;
+	margin:0;
+	background-color:#222;
+}
+.bodyRoot {
+   
+	background-color:#1A1919;
+   overflow-y: hidden;
+   overflow-x: hidden; /*
+   background-color:grey;
+   width:100%;
+   height:100%; */
+}
+
+.LogPanel
+{
+	position:absolute;
+	left:0px;
+	top:100px;
+	color:white;
+	/*z-index:5; */
+	 font-size:10px;
+     text-align: left;
+      font-weight: bold;
+}
+
+.MainCanvas
+{
+	position:absolute;
+	width:100%;
+	height:768px;
+	background-color:black;
+	
+}
+
+.loaderScreen
+{
+	display:block;
+	width:100%;
+	height:100%;
+	background-color:black;
+}
+
+
+.GuiBottomBar
+{
+	position:absolute;
+	width:100%;
+	height:48px;
+	top: 768px;
+	margin-top: -48px;
+	background-image:url(images/guibar.png);
+	background-position:center;
+	/*z-index:5; */
+	opacity:0.3;
+}
+
+.BackgroundCanvas
+{
+	position: absolute;
+	width:100%;
+	height:100%;
+	background-color:black;
+	background-image:url(images/Background_1280_720.jpg);
+	background-repeat:no-repeat;
+	background-position:top center;
+	
+}
+.GameView
+{
+	position:absolute;
+	width:1024px;
+	height:768px;
+	background-image:url(images/GameScene.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:#000;
+	margin-left:-512px;
+	left:50%;
+	top:0px;
+	
+	opacity:0.3;
+}
+
+.DisplayerScreen
+{
+	position: absolute;
+	width:750px;
+	height:434px;
+	left: 50%;
+	top: 50%;
+	margin-left:-355px;
+	margin-top: -268px;
+	
+	overflow:hidden;
+}
+
+.guiView
+{
+	position:absolute;
+	width:1024px;
+	height:768px;
+	margin-left:-512px;
+	left:50%;
+	top:0px;
+	
+/*	z-index:4; */
+	
+/*	-webkit-animation-name: blinker;  
+  -webkit-animation-iteration-count: infinite;  
+  -webkit-animation-timing-function: lineer;
+  -webkit-animation-duration: 2s; */
+}
+
+@-webkit-keyframes blinker {  
+ 
+   0% {
+   opacity: 1.0;
+ }
+ 50% {
+   opacity: 0.7;
+ }
+ 100% {
+ 	 opacity: 1.0;
+ }
+}
+
+.AnimationTool
+{
+	position:absolute;
+	width:1024px;
+	height:768px;
+	margin-left:-512px;
+	left:50%;
+	top:0px;
+	/*overflow:hidden;*/
+/*	z-index:3; */
+}
+
+
