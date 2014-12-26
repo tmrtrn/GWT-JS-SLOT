@@ -84,7 +84,7 @@ public class Activity implements EntryPoint{
 			return;
 		}
 		
-		String errorXmlUri = conn.isOffline() ? "http://127.0.0.1:8888/Default/Slots/xml/" : conn.rpc.url +"Default/Slots/xml/";//"http://games.dev02.sheriffproducts.nl/Default/Slots/xml/";
+		String errorXmlUri = conn.isOffline() ? "http://127.0.0.1:8888/Default/Slots/xml/" : conn.rpc.url +"Default/Slots/xml/";
 		
 		if(!conn.isOffline())
 		{
@@ -113,7 +113,7 @@ public class Activity implements EntryPoint{
 						//Show Preloader
 						GWT.log("startup ok");
 						
-						String url = conn.rpc.url +"js/messaging.js";//"http://games.dev01.sheriffproducts.nl/js/messaging.js";//conn.rpc.url;
+						String url = conn.rpc.url +"js/messaging.js";
 						String hash = conn.rpc.getParameter("hash");
 						boolean startMessagingListener  = Window.Location.getQueryString().indexOf("poll_message_interval") >= 0;
 						if(startMessagingListener)
